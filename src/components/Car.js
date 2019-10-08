@@ -10,7 +10,7 @@ const Car = props => {
     <Container maxWidth="sm" className="car-container">
       <Paper className="car-paper">
         <h2>{car.Name}</h2>
-        {Object.keys(car).map((key, idx) => {
+        {Object.keys(car).map((key, i) => {
           return <Chip label={`${key}: ${car[key]}`}></Chip>;
         })}
       </Paper>
